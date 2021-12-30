@@ -48,10 +48,24 @@ class homapp extends StatelessWidget {
         //bottomNavigationBar it's like appbar we also add add bar into bottom.
         //bottomNavigationBar has multiple items and can use text,lable,icon and both
 
-        //the bottomNavigationBar is generally created for displaying messages as well as providing page spacific shortcu action
-        bottomNavigationBar: Text("Helo"),
+        //the bottomNavigationBar is generally created for displaying messages as well as providing page spacific shortcu action'
+        //for creating bottom bar we need to add  BottomNavigationBar() int the bottomNAvigationBar
+
+        // and it required least one parameter items:[]
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 0,
+          items: [
+            BottomNavigationBarItem(
+              icon: new Icon(Icons.home),
+              title: new Text('Home'),
+            ),
+          ],
+        ),
       ),
+      );
+    throw
+    UnimplementedError
+    (
     );
-    throw UnimplementedError();
   }
 }
